@@ -20,7 +20,7 @@
    * Target date is set to GTA VI's announced release date
    * Using Svelte 5 Runes ($state and $derived) for reactive state management
    */
-  let targetDate = new Date("2026-05-26T00:00:00Z");
+  let targetDate = new Date("2026-11-19T00:00:00Z");
   let now = $state(new Date());
   let timeRemaining = $derived(calculateTimeRemaining(targetDate, now));
 
@@ -388,7 +388,7 @@
       <img src={gta6KeyArtUrl} alt="Grand Theft Auto VI Key Art" class="hero-key-art-background-img" />
       <div class="hero-content-overlay">
         <div class="release-date-text">
-          COMING MAY 26 2026
+          COMING NOVEMBER 19TH 2026
         </div>
         {#if timeRemaining.total > 0}
           <div class="countdown-timer">
